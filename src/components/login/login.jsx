@@ -17,12 +17,12 @@ export class Login extends React.Component {
                 <div className="form">
                     <div className="form-group">
                         <lebel htmlFor="username">Username</lebel>
-                        <input type="text" name="username" placeholder="username"/>
+                        <input type="text" name="username" placeholder="   username"/>
                     </div>
 
                     <div className="form-group">
                         <lebel htmlFor="password">Password</lebel>
-                        <input type="password" name="password" placeholder="password"/>
+                        <input type="password" name="password" placeholder="   password"/>
                     </div>
 
 
