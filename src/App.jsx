@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import {Login} from './components/login/index';
+import {Login, Register} from './components/login/index';
 
 class App extends React.Component {
 
@@ -18,7 +18,8 @@ class App extends React.Component {
       <div className = 'App'>
         <div className="login">
           <div className="container">
-            {isLoggingActive && <Login/>container}
+            {isLoggingActive && <Login container={(ref) => this.current = ref}/>}
+            {!isLoggingActive && <Register container={(ref) => this.current = ref}/>}
           </div>
         </div>
       </div>
