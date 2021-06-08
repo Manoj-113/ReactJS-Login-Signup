@@ -12,6 +12,17 @@ class App extends React.Component {
     }
   }
 
+  changeState(){
+    const { isLoggingActive} = this.state;
+    if(isLoggingActive) {
+      this.rightSide.classList.remove("right");
+      this.rightSide.classList.add("left");
+    }else{
+      this.rightSide.classList.remove("left");
+      this.rightSide.classList.add("right");
+    }
+  }
+
   render() {
     const {isLoggingActive} = this.state;
     const current = isLoggingActive ? "Register" : "Login";
