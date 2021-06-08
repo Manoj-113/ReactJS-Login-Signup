@@ -21,6 +21,8 @@ class App extends React.Component {
       this.rightSide.classList.remove("left");
       this.rightSide.classList.add("right");
     }
+
+    this.setState(prevState => ({isLoggingActive: !prevState.isLoggingActive}));
   }
 
   render() {
